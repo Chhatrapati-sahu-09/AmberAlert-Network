@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f1e4c8" />
+  <meta name="description" content="Amberline — a community-powered missing person and amber alert coordination dashboard." />
+  <title>Amberline — Community Alert Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="ticker">
+    <span class="ticker-dot"></span>
+    <span>COMMUNITY SAFETY NETWORK</span>
+    <span class="ticker-line"></span>
+    <span>STAY AWARE · SHARE RESPONSIBLY · HELP BRING PEOPLE HOME</span>
+    <span class="ticker-right">EST. 2026 <b>✳</b> VOL. 01</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Amberline home">
+      <span class="brand-mark">A<span>↗</span></span>
+      <span class="brand-name">amberline<span class="brand-period">.</span><small>THE COMMUNITY ALERT NETWORK</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#alerts">Active alerts <i>01</i></a>
+      <a href="#how">How it works</a>
+      <a href="#community">Community</a>
+    </nav>
+    <button class="button button-dark nav-cta" id="reportTop">＋ Report a sighting</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow"><span class="pulse"></span> PUBLIC SAFETY / ISSUE NO. 001</div>
+        <h1>When every<br>second <em>matters.</em></h1>
+        <p class="hero-copy">One trusted place for urgent alerts, verified details, and neighbors ready to help bring someone home.</p>
+        <div class="hero-actions">
+          <a class="button button-amber" href="#alerts">View active alerts <span>↗</span></a>
+          <button class="button button-outline" id="howButton">How it works <span>↓</span></button>
+        </div>
+        <div class="hero-note"><span class="note-icon">✳</span><span><b>BUILT FOR THE MOMENTS THAT MATTER.</b><br>Fast information. Clear action. Stronger communities.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-stamp">LOOK<br>OUT FOR<br>ONE<br>ANOTHER<span>✳</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-cross">＋</div>
+        <div class="art-card">
+          <div class="art-card-top"><span>COMMUNITY SIGNAL</span><span class="signal-live"><i></i> LIVE</span></div>
+          <div class="signal-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="art-coordinates"><b>34° 03' 08.4"N</b><span>LOCAL NETWORK / ACTIVE</span></div>
+        </div>
+        <div class="art-caption">FIG 01. — A SIGNAL<br>TRAVELS FURTHER TOGETHER.</div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
+
+    <section class="stats-strip" aria-label="Network overview">
+      <div><span class="stat-label">NETWORK STATUS</span><b><i class="green-dot"></i> OPERATIONAL</b></div>
+      <div><span class="stat-label">COMMUNITY FIRST</span><b>LOCAL → CONNECTED</b></div>
+      <div><span class="stat-label">OUR PRINCIPLE</span><b>VERIFY BEFORE YOU SHARE</b></div>
+      <div class="stats-aside">A LITTLE ATTENTION<br>CAN MAKE A BIG DIFFERENCE <span>↗</span></div>
+    </section>
+
+    <section class="alerts-section section-pad" id="alerts">
+      <div class="section-heading">
+        <div><div class="eyebrow">02 / THE ALERT BOARD</div><h2>Signal <em> matters.</em></h2></div>
+        <div class="section-heading-aside">URGENT INFORMATION<br>SHOULD BE EASY TO FIND.</div>
+      </div>
+      <div class="alert-tools">
+        <div class="filter-tabs" role="group" aria-label="Filter alerts">
+          <button class="filter active" data-filter="all">All updates <span>03</span></button>
+          <button class="filter" data-filter="active">Active <span>01</span></button>
+          <button class="filter" data-filter="resolved">Resolved <span>02</span></button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="alertSearch" type="search" placeholder="Search by name or location..." aria-label="Search alerts"></label>
+      </div>
+      <div class="alerts-grid" id="alertsGrid">
+        <article class="alert-card featured-alert" data-status="active" data-search="sample alert case amber example">
+          <div class="alert-card-meta"><span class="status-pill status-active"><i></i> DEMO ACTIVE ALERT</span><span class="alert-id">AL-2026-001</span></div>
+          <div class="featured-content">
+            <div class="portrait-placeholder"><span>✳</span><small>PHOTO<br>PLACEHOLDER</small></div>
+            <div class="alert-main-info">
+              <div class="tiny-label">MISSING PERSON / SAMPLE DATA</div>
+              <h3>Sample alert case</h3>
+              <p class="alert-subtitle">Demonstration record — replace with verified official information.</p>
+              <div class="alert-facts">
+                <div><span>LAST SEEN</span><b>Demo location</b></div>
+                <div><span>REPORTED</span><b>Sample date</b></div>
+                <div><span>REFERENCE</span><b>AL-2026-001</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="alert-warning"><span>!</span><p>This is fictional demo content, not a real missing-person report. No real person or location is represented.</p></div>
+          <div class="alert-card-footer"><span>PLEASE DO NOT CONTACT OR APPROACH ANYONE BASED ON DEMO DATA.</span><button class="text-button details-button" data-alert="sample">View details ↗</button></div>
+        </article>
+        <article class="alert-card compact-alert" data-status="resolved" data-search="resolved demo record north district">
+          <div class="alert-card-meta"><span class="status-pill status-resolved">✓ RESOLVED / DEMO</span><span class="alert-id">AL-2026-002</span></div>
+          <div class="tiny-label">COMMUNITY UPDATE</div>
+          <h3>Demo record <span class="resolved-mark">✓</span></h3>
+          <p>Sample resolved update for layout preview. No real case details.</p>
+          <div class="compact-bottom"><span>STATUS UPDATED / SAMPLE</span><button class="text-button details-button" data-alert="resolved">View note ↗</button></div>
+        </article>
+        <article class="alert-card compact-alert" data-status="resolved" data-search="community notice resolved sample east zone">
+          <div class="alert-card-meta"><span class="status-pill status-resolved">✓ RESOLVED / DEMO</span><span class="alert-id">AL-2026-003</span></div>
+          <div class="tiny-label">COMMUNITY UPDATE</div>
+          <h3>Community notice <span class="resolved-mark">✓</span></h3>
+          <p>Sample archive entry demonstrating a past alert state.</p>
+          <div class="compact-bottom"><span>ARCHIVED / SAMPLE</span><button class="text-button details-button" data-alert="archive">View note ↗</button></div>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>No matching updates. Try another search or filter.</div>
+      <div class="demo-disclaimer">✳ &nbsp; All records shown above are fictional interface examples. Amberline is a concept demo, not an official emergency-alert authority.</div>
+    </section>
+
+    <section class="how-section section-pad" id="how">
+      <div class="how-intro"><div class="eyebrow">03 / FROM SIGNAL TO ACTION</div><h2>Small actions.<br><em>Real impact.</em></h2><p>A clear path helps communities share useful information without adding noise or risking anyone’s safety.</p></div>
+      <div class="steps">
+        <div class="step"><div class="step-number">01</div><div><h3>Receive a trusted alert</h3><p>Officially confirmed information is shared with the community in one consistent format.</p></div><span class="step-icon">↘</span></div>
+        <div class="step"><div class="step-number">02</div><div><h3>Review the details</h3><p>Check the timestamp, source, and location. Never rely on an unverified forwarded message.</p></div><span class="step-icon">⌕</span></div>
+        <div class="step"><div class="step-number">03</div><div><h3>Share responsibly</h3><p>Pass along the official alert. Send credible tips to the appropriate authorities—not into public comments.</p></div><span class="step-icon">↗</span></div>
+      </div>
+    </section>
+
+    <section class="community-section section-pad" id="community">
+      <div class="community-copy"><div class="eyebrow">04 / THE HUMAN NETWORK</div><h2>Look out for<br><em>each other.</em></h2><p>Technology can connect the dots. People make the difference. Keep information accurate, protect privacy, and let trained responders lead the search.</p><a href="#safety" class="text-link">Community safety guidelines <span>↗</span></a></div>
+      <div class="community-graphic"><div class="community-ring ring-a"></div><div class="community-ring ring-b"></div><div class="community-center">✳</div><span class="node node-a">YOU</span><span class="node node-b">LOCAL</span><span class="node node-c">CARE</span><span class="node node-d">ALERT</span><div class="graphic-caption">ONE COMMUNITY<br>ONE SHARED SIGNAL</div></div>
+    </section>
+
+    <section class="safety-band section-pad" id="safety">
+      <div class="safety-icon">!</div><div><div class="eyebrow">A NOTE ON PUBLIC SAFETY</div><h2>See something urgent?</h2><p>Contact your local emergency services or law-enforcement agency directly. Do not use this demo form to report an actual emergency, submit sensitive personal data, or investigate a case yourself.</p></div>
+      <a class="button button-dark" href="https://www.112.gov.in/" target="_blank" rel="noreferrer">India emergency help ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">A<span>↗</span></span><span class="brand-name">amberline<span class="brand-period">.</span><small>THE COMMUNITY ALERT NETWORK</small></span></a>
+    <div class="footer-note">A CONCEPT FOR SAFER, MORE CONNECTED COMMUNITIES.<br>NOT AN OFFICIAL EMERGENCY ALERT SERVICE.</div>
+    <div class="footer-right">© 2026 AMBERLINE <span>MADE TO LOOK OUT FOR ONE ANOTHER ✳</span></div>
+  </footer>
+
+  <dialog id="detailsDialog" class="modal">
+    <button class="modal-close" id="closeDetails" aria-label="Close">×</button>
+    <div class="eyebrow">ALERT RECORD / DEMO</div><h2 id="detailTitle">Sample alert</h2><p id="detailBody">This is fictional demonstration content.</p>
+    <div class="modal-note">This interface preview does not transmit reports or connect to emergency services. For real incidents, contact local authorities.</div>
+    <button class="button button-dark" id="dismissDetails">Close window</button>
+  </dialog>
+
+  <dialog id="reportDialog" class="modal report-modal">
+    <button class="modal-close" id="closeReport" aria-label="Close">×</button>
+    <div class="eyebrow">COMMUNITY INPUT / DEMO ONLY</div><h2>Share a <em>sighting.</em></h2>
+    <p class="form-intro">This sample form is intentionally local-only. It does not submit, store, or send reports. Do not enter real names, contact details, or sensitive information.</p>
+    <form id="demoForm">
+      <label>Reference ID<input name="reference" placeholder="e.g. AL-2026-001" required></label>
+      <label>General area (fictional)<input name="area" placeholder="Sample area only" required></label>
+      <label>What would you like to add?<textarea name="note" rows="3" placeholder="Use fictional example details only" required></textarea></label>
+      <label class="consent"><input type="checkbox" required> I understand this is a non-functional demo form.</label>
+      <button class="button button-amber" type="submit">Preview demo note ↗</button>
+      <div class="form-result" id="formResult" role="status" hidden></div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
