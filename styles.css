@@ -15,7 +15,8 @@ button{cursor:pointer}
 .ticker-line{height:1px;background:#686358;flex:1;margin:0 10px}
 .ticker-right{margin-left:auto;color:#b6ad9b}.ticker-right b{color:var(--amber);font-size:13px;margin-left:6px}
 .topbar{height:88px;padding:0 5.3%;display:flex;align-items:center;border-bottom:1px solid var(--line);gap:40px}
-.brand{display:flex;align-items:center;gap:10px;min-width:235px}
+.brand{display:flex;align-items:center;gap:10px;min-width:235px;text-decoration:none;color:inherit}
+.brand-logo{width:48px;height:48px;object-fit:contain}
 .brand-mark{width:40px;height:40px;background:var(--orange);display:grid;place-items:center;font-weight:700;font-size:21px;position:relative}
 .brand-mark span{font-size:10px;position:absolute;right:5px;top:5px}
 .brand-name{font-size:20px;font-weight:700;letter-spacing:-1px;line-height:1}

@@ -1,5 +1,9 @@
 # Amberline — Amber Alert Network (Retro UI)
 
+<div align="center">
+  <img src="./image/logo.png" alt="Amber Alert Network" width="100%" />
+</div>
+
 A responsive, retro-editorial concept dashboard for a community missing-person and public-safety alert network. Built as a self-contained HTML/CSS/JavaScript front end.
 
 ## Preview
@@ -29,6 +33,7 @@ python -m http.server 5500
 This is a UI prototype, **not an official emergency alert system**. All case records are fictional placeholders. The sample form is non-functional and must not be used for actual reports.
 
 Before any production use:
+
 1. Integrate authorized, verified alert feeds and clearly show their source and update timestamps.
 2. Establish moderation, identity verification, escalation, and audit procedures.
 3. Route reports securely to authorized agencies; do not expose sensitive personal data publicly.
@@ -42,7 +47,10 @@ AmberAlert-Network/
 ├── index.html
 ├── styles.css
 ├── script.js
-└── README.md
+├── README.md
+└── image/
+    ├── logo.png
+    └── favicon.png
 ```
 
 ## License
