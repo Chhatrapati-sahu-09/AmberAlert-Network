@@ -1,9 +1,5 @@
 <h1 align="center">
-  <img src="./image/favicon-192.png"
-       width="32"
-       height="32"
-       alt="Amber Alert Logo"
-       style="vertical-align: middle;" />
+ 
   Amber Alert Network
 </h1>
 
