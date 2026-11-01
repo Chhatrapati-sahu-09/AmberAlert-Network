@@ -1,9 +1,8 @@
 # Amberline — Amber Alert Network (Retro UI)
 
-<div align="center">
-  <img src="./image/logo.png" alt="Amber Alert Network" width="100%" />
-</div>
-
+<img src="./image/Screenshot%202026-11-01%20140135.png"
+       alt="Amber Alert Network Preview"
+       width="100%" />
 A responsive, retro-editorial concept dashboard for a community missing-person and public-safety alert network. Built as a self-contained HTML/CSS/JavaScript front end.
 
 ## Preview
@@ -49,8 +48,11 @@ AmberAlert-Network/
 ├── script.js
 ├── README.md
 └── image/
-    ├── logo.png
-    └── favicon.png
+    ├── logo.png          # 512 × 512
+    ├── favicon.png       # 512 × 512
+    ├── favicon-16.png   # 16 × 16
+    ├── favicon-32.png   # 32 × 32
+    └── favicon-192.png  # 192 × 192
 ```
 
 ## License
